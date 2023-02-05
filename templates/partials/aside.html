@@ -1,0 +1,115 @@
+{% load static %}
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span style="font-size: 15px; color: #272B41;">Contact Manager</span>
+                        </li>
+
+                        <!-- dasboard -->
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span class="menu-text">Dashboard</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li class="l_sidebar">
+                                    <a href="#" data-layout="light">Light Mode</a>
+                                </li>
+                                <li class="l_sidebar">
+                                    <a href="#" data-layout="dark">Dark Mode</a>
+                                </li>
+                                <li class="l_navbar">
+                                    <a href="#" data-layout="top">Top Menu</a>
+                                </li>
+                                <li class="l_navbar">
+                                    <a href="#" data-layout="side">Side Menu</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- user-app -->
+                        <li class="has-child">
+
+                            <a href="#" class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid nav-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                                <span class="menu-text">Team App</span>
+                                <span class="badge badge-success menuItem">New</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 424.844px; left: 214px; display: none;">
+                                <li>
+                                    <a href="{% url 'team:teams_home' %}" class="">Home Team</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'team:teams_local' %}" class="">Local Team</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'team:teams_table' %}" class="">Table Team</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'team:teams_add' %}" class=""><span class="badge badge-success menuItem">New</span>Add Team</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- contact -->
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="user-check" class="nav-icon"></span>
+                                <span class="menu-text">Contact App</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+
+                            <ul>
+                                <li>
+                                    <a href="{% url 'contact:contacts' %}" class="active">Contacts</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact:contacts_list' %}" class="">Contacts List</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact:contact_profile' %}" class="">Contact Profile</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact:add_contact' %}" class="">Add contact</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- task-app -->
+                        <li>
+                            <a href="{% url 'task:tasks_list' %}" class=" active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard nav-icon"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                                <span class="menu-text">Task App</span>
+                                <span class="badge badge-success menuItem">New</span>
+                            </a>
+                        </li>
+
+                        <!-- can be use for contact lists -->
+                        <!-- <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="database" class="nav-icon"></span>
+                                <span class="menu-text">Firestore Crud</span>
+                                <span class="toggle-icon"></span>
+                                <span class="badge badge-success menuItem">New</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="firestore.html">View All</a>
+                                </li>
+                                <li>
+                                    <a class="" href="firestore-add.html">Add
+                                        New</a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </aside>

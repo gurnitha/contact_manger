@@ -1,0 +1,575 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div class="contents">
+
+            <div class="profile-setting ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="breadcrumb-main">
+                                <h4 class="text-capitalize breadcrumb-title">Contact profile</h4>
+                            </div>
+
+                        </div>
+
+                        <!-- aside-contact -->
+                        <div class="col-xxl-3 col-lg-4 col-sm-5">
+                            <!-- Profile Acoount -->
+                            <div class="card mb-25">
+                                <div class="card-body text-center p-0">
+
+                                    <div class="account-profile border-bottom pt-25 px-25 pb-0 flex-column d-flex align-items-center ">
+                                        <div class="ap-img mb-20 pro_img_wrapper">
+                                            <input id="file-upload" type="file" name="fileUpload" class="d-none">
+                                            <label for="file-upload">
+                                                <!-- Profile picture image-->
+                                                <img class="ap-img__main rounded-circle wh-120" src="{% static 'assets/img/tm1.png' %}" alt="profile">
+                                                
+                                            </label>
+
+                                        </div>
+                                        <div class="ap-nameAddress pb-3">
+                                            <h5 class="ap-nameAddress__title">Duran Clayton</h5>
+                                            <p class="ap-nameAddress__subTitle fs-14 m-0">Top Designer</p>
+                                        </div>
+                                    </div>
+                                    <div class="ps-tab p-20 pb-25">
+                                        <div class="nav flex-column text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            
+                                            <!-- personal-profile -->
+                                            <a class="nav-link active" id="v-pills-personal-info-tab" data-toggle="pill" href="#v-pills-personal-info" role="tab" aria-controls="v-pills-personal-info" aria-selected="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Personal Info</a>
+                                            <!-- personal-profile -->
+
+                                            <!-- work-profile -->
+                                            <a class="nav-link " id="v-pills-notification-tab" data-toggle="pill" href="#v-pills-notification" role="tab" aria-controls="v-pills-notification" aria-selected="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>Work Info</a>
+                                            <!-- work-profile -->
+
+                                            <!-- social-profile -->
+                                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Social Info</a>
+                                            <!-- social-profile -->
+                                          
+                                            <!-- notes -->
+                                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>Notes</a>
+                                            <!-- notes -->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Profile Acoount End -->
+
+                            <div class="card mb-25">
+                                    <div class="user-bio border-bottom">
+                                        <div class="card-header border-bottom-0 pt-sm-30 pb-sm-0  px-md-25 px-3">
+                                            <div class="profile-header-title">
+                                                User Bio
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-md-1 pt-0">
+                                            <div class="user-bio__content">
+                                                <p class="m-0">Nam malesuada dolor tellus pretium amet was hendrerit facilisi id
+                                                    vitae enim
+                                                    sed ornare
+                                                    there suspendisse sed orci neque ac sed aliquet risus faucibus in pretium
+                                                    molestie nisl
+                                                    tempor quis odio habitant.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-info border-bottom">
+                                        <div class="card-header border-bottom-0 pt-sm-25 pb-sm-0  px-md-25 px-3">
+                                            <div class="profile-header-title">
+                                                Contact info
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-md-1 pt-0">
+                                            <div class="user-content-info">
+                                                <p class="user-content-info__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>Clayton@example.com
+                                                </p>
+                                                <p class="user-content-info__item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+44 (0161) 347
+                                                    8854
+                                                </p>
+                                                <p class="user-content-info__item mb-0">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>www.example.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-skils border-bottom">
+                                        <div class="card-header border-bottom-0 pt-sm-25 pb-sm-0  px-md-25 px-3">
+                                            <div class="profile-header-title">
+                                                Skills
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-md-1 pt-0">
+                                            <ul class="user-skils-parent">
+                                                <li class="user-skils-parent__item">
+                                                    <a href="#">UI/UX</a>
+                                                </li>
+                                                <li class="user-skils-parent__item">
+                                                    <a href="#">Branding</a>
+                                                </li>
+                                                <li class="user-skils-parent__item">
+                                                    <a href="#">product design</a>
+                                                </li>
+                                                <li class="user-skils-parent__item">
+                                                    <a href="#">Application</a>
+                                                </li>
+                                                <li class="user-skils-parent__item mb-0">
+                                                    <a href="#">web design</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="db-social border-bottom">
+                                        <div class="card-header border-bottom-0 pt-sm-25 pb-sm-0  px-md-25 px-3">
+                                            <div class="profile-header-title">
+                                                Social Profiles
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-md-1 pt-0">
+                                            <ul class="db-social-parent mb-0">
+                                                <li class="db-social-parent__item">
+                                                    <a class="color-facebook hover-facebook wh-44 fs-22" href="#">
+                                                        <i class="lab la-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="db-social-parent__item">
+                                                    <a class="color-twitter hover-twitter wh-44 fs-22" href="#">
+                                                        <i class="lab la-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="db-social-parent__item">
+                                                    <a class="color-ruby hover-ruby  wh-44 fs-22" href="#">
+                                                        <i class="las la-basketball-ball"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="db-social-parent__item">
+                                                    <a class="color-instagram hover-instagram wh-44 fs-22" href="#">
+                                                        <i class="lab la-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-xxl-9 col-lg-8 col-sm-7">
+                            <div class="mb-50">
+                                <div class="tab-content" id="v-pills-tabContent">
+
+                                    <!-- personal-profile -->
+                                    <div class="tab-pane fade active show" id="v-pills-personal-info" role="tabpanel" aria-labelledby="v-pills-personal-info-tab">
+                                        <!-- Edit Profile -->
+                                        <div class="edit-profile edit-social mt-25">
+                                            <div class="card">
+                                                <div class="card-header px-sm-25 px-3">
+                                                    <div class="edit-profile__title">
+                                                        <h6>Personal Info</h6>
+                                                        <span class="fs-13 color-light fw-400">Add elsewhere links to his/her
+                                                            profile</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="notification-content p-25 border mb-25">
+                                                        <div class="global-shadow radius-xl bg-white">
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Company News</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Meetups Near You</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Opportunities</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Weekly Newsletters</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-content p-25 border mb-25">
+                                                        <div class="global-shadow radius-xl bg-white">
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Anyone seeing my profile page</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Anyone follow me</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Someone mentions me</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Someone accepts my invitation</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Anyone send me a message</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Edit Profile End -->
+                                    </div>
+                                    <!-- personal-profile -->
+
+                                    <!-- work-profile -->
+                                    <div class="tab-pane fade show" id="v-pills-notification" role="tabpanel" aria-labelledby="v-pills-notification-tab">
+                                        <!-- Edit Profile -->
+                                        <div class="edit-profile edit-social mt-25">
+                                            <div class="card">
+                                                <div class="card-header px-sm-25 px-3">
+                                                    <div class="edit-profile__title">
+                                                        <h6>Work Info</h6>
+                                                        <span class="fs-13 color-light fw-400">Add elsewhere links to your
+                                                            profile</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="notification-content p-25 border mb-25">
+                                                        <div class="notification-content__title d-flex justify-content-between flex-wrap pb-20 text-capitalize">
+                                                            <h6 class="fs-15 text-light fw-500 lh-normal">Notifications</h6>
+                                                        </div>
+                                                        <div class="global-shadow radius-xl bg-white">
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Company News</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Meetups Near You</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Opportunities</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Weekly Newsletters</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Edit Profile End -->
+                                    </div>
+                                    <!-- work-profile -->
+
+                                    <!-- social-profile -->
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                        <!-- Edit Profile -->
+                                        <div class="edit-profile edit-social mt-25">
+                                            <div class="card">
+                                                <div class="card-header  px-sm-25 px-3">
+                                                    <div class="edit-profile__title">
+                                                        <h6>social profiles</h6>
+                                                        <span class="fs-13 color-light fw-400">Add elsewhere links to your
+                                                            profile</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-xxl-6 col-lg-8 col-sm-10">
+                                                            <div class="edit-profile__body mx-lg-20">
+                                                                <form>
+                                                                    <div class=" mb-30">
+                                                                        <label for="socialUrl">facebook</label>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text border-facebook bg-facebook text-white wh-44 radius-xs justify-content-center" id="addon-wrapping1">
+                                                                                    <i class="lab la-facebook-f fs-18"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <input type="text" class="form-control form-control--social" placeholder="Url" aria-label="Username" aria-describedby="addon-wrapping1" id="socialUrl">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" mb-30">
+                                                                        <label for="twitterUrl">twitter</label>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text border-twitter bg-twitter text-white wh-44 radius-xs justify-content-center" id="addon-wrapping2">
+                                                                                    <i class="lab la-twitter fs-18"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <input type="text" class="form-control form-control--social" placeholder="@Username" aria-label="Username" aria-describedby="addon-wrapping2" id="twitterUrl">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" mb-30">
+                                                                        <label for="webUrl">Website</label>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text border-ruby  bg-ruby text-white wh-44 radius-xs justify-content-center" id="addon-wrapping3">
+                                                                                    <i class="las la-basketball-ball fs-18"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <input type="text" class="form-control form-control--social" placeholder="Url" aria-label="Username" aria-describedby="addon-wrapping3" id="webUrl">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" mb-30">
+                                                                        <label for="instagramUrl">instagram</label>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text border-instagram  bg-instagram text-white wh-44 radius-xs justify-content-center" id="addon-wrapping4">
+                                                                                    <i class="lab la-instagram fs-18"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <input type="text" class="form-control form-control--social" aria-describedby="addon-wrapping4" placeholder="Url" id="instagramUrl">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" mb-30">
+                                                                        <label for="githubUrl">github</label>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text border-dark  bg-dark  text-white wh-44 radius-xs justify-content-center" id="addon-wrapping5">
+                                                                                    <i class="lab la-github fs-18"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <input type="text" class="form-control form-control--social" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping5" id="githubUrl">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" mb-0">
+                                                                        <label for="mediumUrl">medium</label>
+                                                                        <div class="input-group flex-nowrap">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text border-dark bg-dark text-white wh-44 radius-xs justify-content-center" id="addon-wrapping6">
+                                                                                    <i class="lab la-medium fs-18"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <input type="text" class="form-control form-control--social" placeholder="Username" aria-label="medium" aria-describedby="addon-wrapping6" id="mediumUrl">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Edit Profile End -->
+                                    </div>
+                                    <!-- social-profile -->
+
+                                    <!-- notes -->
+                                    <div class="tab-pane fade show" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <!-- Edit Profile -->
+                                        <div class="edit-profile edit-social mt-25">
+                                            <div class="card">
+                                                <div class="card-header px-sm-25 px-3">
+                                                    <div class="edit-profile__title">
+                                                        <h6>Notes about contact</h6>
+                                                        <span class="fs-13 color-light fw-400" style="color:#FFB6B6;">Confidential</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="notification-content p-25 border mb-25">
+                                                        <div class="global-shadow radius-xl bg-white">
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Company News</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Meetups Near You</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc2">
+                                                                        <label class="custom-control-label" for="nc2"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Opportunities</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc3">
+                                                                        <label class="custom-control-label" for="nc3"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Weekly Newsletters</h6>
+                                                                        <span>Get company news, announcements, and product
+                                                                            updates</span>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc4">
+                                                                        <label class="custom-control-label" for="nc4"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-content p-25 border mb-25">
+                                                        <!-- <div class="notification-content__title d-flex justify-content-between flex-wrap pb-20 text-capitalize">
+                                                            <h6 class="fs-15 text-light fw-500 lh-normal">Account Activity</h6>
+                                                            <a class="text-primary fs-13" href="#">toggle all</a>
+                                                        </div> -->
+                                                        <div class="global-shadow radius-xl bg-white">
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Anyone seeing my profile page</h6>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc5">
+                                                                        <label class="custom-control-label" for="nc5"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Anyone follow me</h6>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc6">
+                                                                        <label class="custom-control-label" for="nc6"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Someone mentions me</h6>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc7">
+                                                                        <label class="custom-control-label" for="nc7"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25 border-bottom">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Someone accepts my invitation</h6>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc8">
+                                                                        <label class="custom-control-label" for="nc8"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="notification-content__body p-25">
+                                                                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                                                                    <div class="div">
+                                                                        <h6>Anyone send me a message</h6>
+                                                                    </div>
+                                                                    <!-- <div class="custom-control custom-switch my-lg-0 my-10">
+                                                                        <input type="checkbox" class="custom-control-input" id="nc9">
+                                                                        <label class="custom-control-label" for="nc9"></label>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Edit Profile End -->
+                                    </div>
+                                    <!-- notes -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+{% endblock content %}

@@ -1,0 +1,598 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <div class="contents">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="breadcrumb-main user-member justify-content-sm-between ">
+                            <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                                <div class="d-flex align-items-center user-member__title justify-content-center mr-sm-25">
+                                    <h4 class="text-capitalize fw-500 breadcrumb-title">Home Team Members</h4>
+                                    <span class="sub-title ml-sm-25 pl-sm-25">479 Members</span>
+                                </div>
+
+                                <form action="/" class="d-flex align-items-center user-member__form my-sm-0 my-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                    <input class="form-control mr-sm-2 border-0 box-shadow-none" type="search" placeholder="Search by Name" aria-label="Search">
+                                </form>
+
+                            </div>
+                            <div class="action-btn">
+                                <a href="#" class="btn px-15 btn-primary" data-toggle="modal" data-target="#new-member">
+                                    <i class="las la-plus fs-16"></i>Add New Member</a>
+
+                                <!-- Modal -->
+                                <div class="modal fade new-member" id="new-member" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content  radius-xl">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title fw-500" id="staticBackdropLabel">Create new member</h6>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="new-member-modal">
+                                                    <form>
+                                                        <div class="form-group mb-20">
+                                                            <input type="text" class="form-control" placeholder="Duran Clayton">
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <div class="category-member">
+                                                                <select class="js-example-basic-single js-states form-control select2-hidden-accessible" id="category-member" data-select2-id="category-member" tabindex="-1" aria-hidden="true">
+                                                                    <option value="JAN" data-select2-id="2">1</option>
+                                                                    <option value="FBR">2</option>
+                                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-category-member-container"><span class="select2-selection__rendered" id="select2-category-member-container" role="textbox" aria-readonly="true" title="1"><span class="select2-selection__clear" title="Remove all items" data-select2-id="3">×</span>1</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-20">
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Project description"></textarea>
+                                                        </div>
+                                                        <div class="form-group textarea-group">
+                                                            <label class="mb-15">status</label>
+                                                            <div class="d-flex">
+                                                                <div class="project-task-list__left d-flex align-items-center">
+                                                                    <div class="checkbox-group d-flex mr-50 pr-10">
+                                                                        <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                            <input class="checkbox" type="checkbox" id="check-grp-1" checked="">
+                                                                            <label for="check-grp-1" class="fs-14 color-light strikethrough">
+                                                                                status
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="checkbox-group d-flex mr-50 pr-10">
+                                                                        <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                            <input class="checkbox" type="checkbox" id="check-grp-2">
+                                                                            <label for="check-grp-2" class="fs-14 color-light strikethrough">
+                                                                                Deactivated
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="checkbox-group d-flex">
+                                                                        <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                            <input class="checkbox" type="checkbox" id="check-grp-3">
+                                                                            <label for="check-grp-3" class="fs-14 color-light strikethrough">
+                                                                                bloked
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-25">
+                                                            <div class="form-group mb-10">
+                                                                <label for="name47">project member</label>
+                                                                <input type="text" class="form-control" id="name47" placeholder="Search members">
+                                                            </div>
+                                                            <ul class="d-flex flex-wrap mb-20 user-group-people__parent">
+                                                                <li>
+                                                                    <a href="#"><img class="rounded-circle wh-34" src="{% static 'assets/img/tm1.png' %}" alt="author"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"><img class="rounded-circle wh-34" src="{% static 'assets/img/tm2.png' %}" alt="author"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"><img class="rounded-circle wh-34" src="{% static 'assets/img/tm3.png' %}" alt="author"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"><img class="rounded-circle wh-34" src="{% static 'assets/img/tm4.png' %}" alt="author"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#"><img class="rounded-circle wh-34" src="{% static 'assets/img/tm5.png' %}" alt="author"></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="d-flex new-member-calendar">
+                                                            <div class="form-group w-100 mr-sm-15 form-group-calender">
+                                                                <label for="datepicker">start Date</label>
+                                                                <div class="position-relative">
+                                                                    <input type="text" class="form-control hasDatepicker" id="datepicker" placeholder="mm/dd/yyyy">
+                                                                    <a href="#">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group w-100 form-group-calender">
+                                                                <label for="datepicker2">End Date</label>
+                                                                <div class="position-relative">
+                                                                    <input type="text" class="form-control hasDatepicker" id="datepicker2" placeholder="mm/dd/yyyy">
+                                                                    <a href="#">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-group d-flex pt-25">
+
+                                                            <button class="btn btn-primary btn-default btn-squared text-capitalize">Add New Member
+                                                            </button>
+
+                                                            <button class="btn btn-light btn-default btn-squared fw-400 text-capitalize b-light color-light">Cancel
+                                                            </button>
+
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm3.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Jack </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Ambassador</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm2.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Barbara Marion </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Head of Political</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm1.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Christine Arnold </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Head of Economy</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm4.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Natalie Corwin</h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Head of Consular</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm5.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Carolyn Park</h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Attache</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/andri.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Adri </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Ambassador</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm2.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Barbara Marion </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Head of Political</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm3.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Christine Arnold </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Head of Economy</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm4.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Natalie Corwin</h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Head of Consular</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150" src="{% static 'assets/img/tm5.png' %}" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">Carolyn Park</h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Attache</p>
+                                    </div>
+                                    <ul class="db-social-parent mb-0 justify-content-center">
+                                        <li class="db-social-parent__item"><a class="color-facebook hover-facebook wh-38 fs-16 rounded-circle" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-twitter hover-twitter wh-38 fs-16 rounded-circle" href="#"><i class="lab la-twitter"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-ruby hover-ruby  wh-38 fs-16 rounded-circle" href="#"><i class="las la-basketball-ball"></i></a></li>
+                                        <li class="db-social-parent__item"><a class="color-instagram hover-instagram wh-38 fs-16 rounded-circle" href="#"><i class="lab la-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+
+                                    <div class="dropdown  dropdown-click ">
+
+                                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </button>
+
+
+                                        <div class="dropdown-default dropdown-bottomRight dropdown-menu">
+                                            <a class="dropdown-item" href="#">Item One</a>
+                                            <a class="dropdown-item" href="#">Item Two</a>
+                                            <a class="dropdown-item" href="#">Item Three</a>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}

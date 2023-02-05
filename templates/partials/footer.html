@@ -1,0 +1,30 @@
+{% load static %}
+
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2023 @<a href="#">Developed with Love by ING</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'team:teams_home' %}">Teams</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact:contacts' %}">Contacts</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'task:tasks_list' %}">Tasks</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ends: .Footer Menu -->
+                    </div>
+                </div>
+            </div>
+        </footer>
