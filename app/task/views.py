@@ -8,4 +8,4 @@ from django.shortcuts import render
 
 # TASK_LIST
 def tasks_list(request):
-	return render(request, 'apps/task/tasks_list.html')
+	return render(request, 'app/task/tasks_list.html')

@@ -1,10 +1,10 @@
-# apps/task/urls.py
+# app/task/urls.py
 
 # Import from django modules
 from django.urls import path
 
 # Import from locals
-from apps.task import views
+from app.task import views
 
 app_name='task'
 

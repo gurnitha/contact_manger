@@ -65,3 +65,13 @@ Building A Contact Manager like a Platform using Django
         new file:   templates/partials/aside.html
         new file:   templates/partials/footer.html
         new file:   templates/partials/header.html
+
+
+#### 01.2 Modifikasi files naming
+
+        renamed:    apps/contact/__init__.py -> app/contact/__init__.py
+        renamed:    apps/contact/admin.py -> app/contact/admin.py
+        renamed:    apps/contact/apps.py -> app/contact/apps.py
+        ...
+        renamed:    templates/apps/team/teams_local.html -> templates/app/team/teams_local.html
+        renamed:    templates/apps/team/teams_table.html -> templates/app/team/teams_table.html

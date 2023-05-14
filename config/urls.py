@@ -11,16 +11,16 @@ from django.urls import path, include
 urlpatterns = [
 
     # home
-    path('', include('apps.home.urls', namespace='home')),
+    path('', include('app.home.urls', namespace='home')),
     
     # contact
-    path('contacts/', include('apps.contact.urls', namespace='contact')),
+    path('contacts/', include('app.contact.urls', namespace='contact')),
 
     # team
-    path('teams/', include('apps.team.urls', namespace='team')),
+    path('teams/', include('app.team.urls', namespace='team')),
 
     # task
-    path('tasks/', include('apps.task.urls', namespace='task')),
+    path('tasks/', include('app.task.urls', namespace='task')),
 
     # admin
     path('admin/', admin.site.urls),

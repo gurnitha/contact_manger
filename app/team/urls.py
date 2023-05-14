@@ -1,10 +1,10 @@
-# apps/team/urls.py
+# app/team/urls.py
 
 # Import from django modules
 from django.urls import path
 
 # Import from locals
-from apps.team import views
+from app.team import views
 
 app_name='team'
 

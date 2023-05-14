@@ -42,10 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # new
-    'apps.home.apps.HomeConfig',
-    'apps.contact.apps.ContactConfig',
-    'apps.team.apps.TeamConfig',
-    'apps.task.apps.TaskConfig',
+    'app.home.apps.HomeConfig',
+    'app.contact.apps.ContactConfig',
+    'app.team.apps.TeamConfig',
+    'app.task.apps.TaskConfig',
 ]
 
 MIDDLEWARE = [

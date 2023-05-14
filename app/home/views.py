@@ -1,4 +1,4 @@
-# apps/home/views.py
+# app/home/views.py
 
 # Import from django modules
 from django.shortcuts import render
@@ -8,4 +8,4 @@ from django.shortcuts import render
 
 # HOME
 def home(request):
-	return render(request, 'apps/home/home.html')
+	return render(request, 'app/home/home.html')

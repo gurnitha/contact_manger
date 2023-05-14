@@ -1,10 +1,10 @@
-# apps/home/urls.py
+# app/home/urls.py
 
 # Import from django modules
 from django.urls import path
 
 # Import from locals
-from apps.home import views
+from app.home import views
 
 app_name='home'
 

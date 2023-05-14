@@ -1,10 +1,10 @@
-# apps/contact/urls.py
+# app/contact/urls.py
 
 # Import from django modules
 from django.urls import path
 
 # Import from locals
-from apps.contact import views
+from app.contact import views
 
 app_name='contact'
 
